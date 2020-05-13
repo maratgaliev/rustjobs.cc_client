@@ -1,0 +1,165 @@
+.brand-name {
+  font-family: "Alfa Slab One", serif;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.custom-header {
+  font-family: "Alfa Slab One", serif;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 3em;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.job-title {
+  font-family: "Alfa Slab One", serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #2e2459;
+}
+
+.job-city {
+  color: #a72145 !important;
+}
+
+.ql-container{
+  height: 450px;
+  background-color: #fff;
+  color: #000;
+}
+
+.job-date {
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  color: #000;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  display: flex;
+  font-weight: 700;
+  flex-direction: column;
+}
+
+.custom-badge {
+  color: black;
+  background-color: #ffc832;
+  border-color: #ffc832;
+  height: auto;
+  font-weight: bolder;
+}
+
+.section-shaped .shape-style-1.shape-default {
+  background: linear-gradient(150deg, #0b7261 15%, #0b7261 70%, #0b7261 94%) !important;
+}
+
+.bg-gradient-default {
+  background: linear-gradient(150deg, #0b7261 15%, #0b7261 70%, #0b7261 94%) !important;
+}
+
+.form-title {
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  color: #000;
+  font-size: 2rem;
+  line-height: 1.6;
+  display: flex;
+  font-weight: 700;
+  flex-direction: column;
+}
+
+.add_btn, .add_btn:hover {
+  color: black;
+  background-color: #ffc832;
+  border-color: #ffc832;
+  width: 100%;
+  height: auto;
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+.footer {
+  background: #2a3439;
+  color: #fff !important;
+}
+
+footer {
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+
+.custom-lg h3, h4 {
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+
+footer a, a:hover {
+  color: #ffc832;
+  text-decoration: none;
+}
+
+.nav-footer .nav-item:last-child .nav-link {
+  color: #ffc832 !important;
+}
+
+.text-primary {
+  color: black;
+  font-weight: 600 !important;
+}
+
+.form-control {
+  color: #000 !important;
+}
+
+.vs__dropdown-toggle{
+  padding: 10px;
+}
+
+.vs__search {
+  color: #8898aa !important;
+}
+
+.job-title-block h3 {
+  font-family: "Alfa Slab One", serif;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.job-city-title {
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.job-title-link, .job-title-link:hover {
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1.2;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #a72145 !important;
+}
+
+.custom-button-apply, .custom-button-apply:hover {
+  color: #fff;
+  background-color: #2e2459;
+  border-color: #2e2459;
+  width: 100%;
+  height: auto;
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
