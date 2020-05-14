@@ -5,6 +5,7 @@ import Footer from "./layout/main/Footer";
 import Main from "./views/Main.vue";
 import NewJob from "./views/NewJob.vue";
 import Job from "./views/Job.vue";
+import About from "./views/About.vue";
 
 Vue.use(Router);
 
@@ -34,6 +35,15 @@ export default new Router({
       components: {
         header: Header,
         default: NewJob,
+        footer: Footer
+      }
+    },
+    {
+      path: "/about",
+      name: "About",
+      components: {
+        header: Header,
+        default: About,
         footer: Footer
       }
     }
