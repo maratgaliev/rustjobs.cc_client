@@ -6,7 +6,7 @@
 
 ```bash
 
-npm i
+yarn
 
 ```
 

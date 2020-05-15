@@ -18,7 +18,7 @@
           <div class="col px-0">
             <div class="row">
               <div class="col-lg-12 text-center">
-                <img src="/img/icons/apple-icon-120x120.png" />
+                <img class='center-logo' src="/img/icons/apple-icon.png" />
               </div>
               <div class="col-lg-12 text-center pt-4">
                 <span class="display-3 brand-name">
@@ -76,7 +76,7 @@ export default {
   },
   created() {
     axios
-      .get(`https://rustjobs.herokuapp.com/jobs`)
+      .get(`${process.env.VUE_APP_API_HOST}/jobs`)
       .then(response => {
         this.jobs = response.data;
       })

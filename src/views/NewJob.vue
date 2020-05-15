@@ -206,7 +206,7 @@ export default {
         const valid = await this.$validator.validateAll()
         if (valid) {
           axios
-            .post('https://rustjobs.herokuapp.com/jobs', {
+            .post(`${process.env.VUE_APP_API_HOST}/jobs`, {
               title: this.editedItem.title,
               description: this.editedItem.description,
               currency: this.editedItem.currency,

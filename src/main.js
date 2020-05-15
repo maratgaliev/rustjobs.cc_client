@@ -4,7 +4,7 @@ import router from "./router";
 import Argon from "./plugins/argon-kit";
 import VeeValidate from 'vee-validate'
 Vue.config.productionTip = false;
-
+require('dotenv').config()
 Vue.use(Argon);
 Vue.use(VeeValidate);
 

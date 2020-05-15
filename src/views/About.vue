@@ -38,83 +38,8 @@
   </section>
 </template>
 <script>
-import axios from "axios";
-import {
-  parseISO,
-  format,
-  formatDistance,
-  formatRelative,
-  subDays
-} from "date-fns";
-import "quill/dist/quill.core.css";
-import "quill/dist/quill.snow.css";
-import "quill/dist/quill.bubble.css";
-import { quillEditor } from "vue-quill-editor";
-import Vue from "vue";
-import vSelect from "vue-select";
-
-Vue.component("v-select", vSelect);
-import "vue-select/dist/vue-select.css";
 export default {
-  components: {
-    quillEditor
-  },
-  data() {
-    return {
-      agree: false,
-      editedItem: {},
-      currencies: ["USD", "CAD", "EUR", "RUB"],
-      job_types: ["FULLTIME", "CONTRACT", "PARTTIME", "FREELANCE"],
-      customToolbar: {
-        modules: {
-          toolbar: [
-            ["bold", "italic", "underline", "strike"],
-            ["blockquote", "code-block"],
-            [{ header: 1 }, { header: 2 }],
-            [{ list: "ordered" }, { list: "bullet" }],
-            [{ script: "sub" }, { script: "super" }],
-            [{ indent: "-1" }, { indent: "+1" }],
-            [{ direction: "rtl" }],
-            [{ size: ["small", false, "large", "huge"] }],
-            [{ header: [1, 2, 3, 4, 5, 6, false] }],
-            [{ font: [] }],
-            [{ align: [] }],
-            ["clean"],
-            ["link"]
-          ]
-        }
-      }
-    };
-  },
-  mounted() {
-    this.editedItem.currency = this.currencies[0];
-    this.editedItem.job_type = this.job_types[0];
-  },
-  methods: {
-    async save() {
-      try {
-        const valid = await this.$validator.validateAll();
-        if (valid) {
-          axios.post("https://rustjobs.herokuapp.com/jobs", {
-            title: this.editedItem.title,
-            description: this.editedItem.description,
-            currency: this.editedItem.currency,
-            salary: parseInt(this.editedItem.salary),
-            job_type: this.editedItem.job_type,
-            is_remote: this.editedItem.is_remote,
-            company: this.editedItem.company,
-            apply_url: this.editedItem.apply_url,
-            job_city: this.editedItem.job_city,
-            job_email: this.editedItem.job_email,
-            company_website: this.editedItem.company_website,
-            company_twitter: this.editedItem.company_twitter
-          });
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    }
-  }
+
 };
 </script>
 

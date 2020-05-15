@@ -19,7 +19,7 @@
               <div class="col-lg-3 order-lg-2">
                 <div class="card-profile-image">
                   <a href="/">
-                    <img v-lazy="'/img/icons/apple-icon-120x120.png'" />
+                    <img class='center-logo' v-lazy="'/img/icons/apple-icon.png'"/>
                   </a>
                 </div>
               </div>
@@ -90,7 +90,7 @@ export default {
   },
   created() {
     axios
-      .get(`https://rustjobs.herokuapp.com/jobs/${this.$route.params.id}`)
+      .get(`${process.env.VUE_APP_API_HOST}/jobs/${this.$route.params.id}`)
       .then(response => {
         this.job = response.data;
       })
