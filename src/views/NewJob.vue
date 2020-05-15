@@ -122,7 +122,6 @@
                   id="job_email"
                   name="job_email"
                   v-model="editedItem.job_email"
-                  v-validate="'required|email'"
                   autocomplete="off"
                 ></base-input>
                 <base-input
@@ -221,6 +220,7 @@ export default {
               company_website: this.editedItem.company_website,
               company_twitter: this.editedItem.company_twitter,
             })
+          this.$router.push({ name: 'main' });
         }
       } catch (error) {
         console.log(error)
