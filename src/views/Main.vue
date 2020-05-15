@@ -76,7 +76,7 @@ export default {
   },
   created() {
     axios
-      .get(`http://localhost:5000/jobs`)
+      .get(`https://rustjobs.herokuapp.com/jobs`)
       .then(response => {
         this.jobs = response.data;
       })
