@@ -63,7 +63,6 @@
                   type="number"
                   name="salary"
                   v-model="editedItem.salary"
-                  v-validate="'required'"
                   autocomplete="off"
                 ></base-input>
                 <v-select
@@ -212,7 +211,7 @@ export default {
               title: this.editedItem.title,
               description: this.editedItem.description,
               currency: this.editedItem.currency,
-              salary: parseInt(this.editedItem.salary),
+              salary: this.editedItem.salary ? parseInt(this.editedItem.salary) : null,
               job_type: this.editedItem.job_type,
               is_remote: this.editedItem.is_remote,
               company: this.editedItem.company,
